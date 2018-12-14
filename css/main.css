@@ -1,0 +1,127 @@
+footer.container{
+  background: #eeeeee;
+}
+body{
+  background: url("../images/header/header_bg.jpg") no-repeat fixed center;
+  width: 100%;
+}
+#rideHorse ul.carousel-indicators li,
+#dog_recommend ul.carousel-indicators li{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+#rideHorse ul.carousel-indicators li.active,
+#dog_recommend ul.carousel-indicators li.active{
+  background: #28a745;
+}
+div ul.nav-tabs .nav-link.active {
+  color: #ffffff !important;
+  background-color: #28a745;
+}
+#dog>.row>div a,
+#cat>.row>div a,
+#small>.row>div a{
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+.caption{
+  width: 94%;
+  position: absolute;
+  margin: 0 auto;
+  line-height: 2rem;
+  font-size: 0.8rem;
+  bottom: 5%;
+  left: 3%;
+  right: 3%;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.4);
+}
+.text_detail{
+  font-size: 80%;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.care,
+.shop_car{
+  float: left;
+  width: 49.9%;
+  height: 2.5rem;
+  border: 1px solid #dee2e6;
+  margin-top: 0.25rem;
+}
+.care{
+  background: url("../images/product/icon/care.png") no-repeat 50% 50%;
+}
+.shop_car{
+  background: url("../images/product/icon/shop_car.png") no-repeat 50% 50%;
+}
+.care:hover{
+  background: url("../images/product/icon/care_g.png") no-repeat 50% 50%;
+}
+.shop_car:hover{
+  background: url("../images/product/icon/shop_car_g.png") no-repeat 50% 50%;
+}
+.btn-default{
+  color: #333 !important;
+  background-color: #fff;
+  border-color: #ccc;
+  padding-right: 2px !important;
+  padding-bottom: 2px !important;
+}
+.btn-default:hover{
+  color: #333 !important;
+  background-color: #eee;
+  border-color: #ccc;
+  padding-right: 2px !important;
+  padding-bottom: 2px !important;
+}
+/*
+@media (min-width: 576px) {
+  #cat_recommend {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  #cat_recommend {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  #cat_recommend {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #cat_recommend {
+    max-width: 1140px;
+  }
+}
+*/
+#cat_recommend{
+  position: relative;
+}
+#cat_recommend>img{
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+#cat_recommend>img.showOn{
+  opacity: 1;
+}
