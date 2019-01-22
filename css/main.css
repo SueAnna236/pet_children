@@ -1,20 +1,25 @@
+/*footer背景色*/
 footer.container{
   background: #eeeeee;
 }
-body{
+/*背景图片*/
+.bg-img{
   background: url("../images/header/header_bg.jpg") no-repeat fixed center;
   width: 100%;
 }
+/*首页轮播图的圆点*/
 #rideHorse ul.carousel-indicators li,
 #dog_recommend ul.carousel-indicators li{
   width: 8px;
   height: 8px;
   border-radius: 50%;
 }
+/*首页轮播图的圆点 */
 #rideHorse ul.carousel-indicators li.active,
 #dog_recommend ul.carousel-indicators li.active{
   background: #28a745;
 }
+/*导航按钮 点击后的样式*/
 div ul.nav-tabs .nav-link.active {
   color: #ffffff !important;
   background-color: #28a745;
@@ -27,11 +32,12 @@ div ul.nav-tabs .nav-link.active {
   display: block;
   position: relative;
 }
+/*热门犬种小标题的样式*/
 .caption{
   width: 94%;
   position: absolute;
   margin: 0 auto;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-size: 0.8rem;
   bottom: 5%;
   left: 3%;
@@ -40,6 +46,7 @@ div ul.nav-tabs .nav-link.active {
   color: #ffffff;
   background-color: rgba(0,0,0,0.4);
 }
+/*首页 宠物推荐中 详情的样式*/
 .text_detail{
   font-size: 80%;
   width: 100%;
@@ -51,6 +58,7 @@ div ul.nav-tabs .nav-link.active {
   -webkit-text-overflow: ellipsis;
   white-space: nowrap;
 }
+/*首页中 收藏 加入购物车 按钮的样式*/
 .care,
 .shop_car{
   float: left;
@@ -59,6 +67,7 @@ div ul.nav-tabs .nav-link.active {
   border: 1px solid #dee2e6;
   margin-top: 0.25rem;
 }
+/*首页中 收藏 加入购物车 图片*/
 .care{
   background: url("../images/product/icon/care.png") no-repeat 50% 50%;
 }
@@ -71,45 +80,23 @@ div ul.nav-tabs .nav-link.active {
 .shop_car:hover{
   background: url("../images/product/icon/shop_car_g.png") no-repeat 50% 50%;
 }
+/*白色的按钮样式*/
 .btn-default{
   color: #333 !important;
   background-color: #fff;
   border-color: #ccc;
-  padding-right: 2px !important;
-  padding-bottom: 2px !important;
+  margin-right: 2px;
+  margin-left: 2px;
+  text-align: center;
 }
 .btn-default:hover{
   color: #333 !important;
   background-color: #eee;
   border-color: #ccc;
-  padding-right: 2px !important;
-  padding-bottom: 2px !important;
+  margin-right: 2px;
+  margin-left: 2px;
 }
-/*
-@media (min-width: 576px) {
-  #cat_recommend {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  #cat_recommend {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  #cat_recommend {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #cat_recommend {
-    max-width: 1140px;
-  }
-}
-*/
+/*首页 猫咪推荐轮播图*/
 #cat_recommend{
   position: relative;
 }
@@ -122,6 +109,250 @@ div ul.nav-tabs .nav-link.active {
   opacity: 0;
   transition: all 0.5s linear;
 }
-#cat_recommend>img.showOn{
-  opacity: 1;
+@media (min-width: 992px){
+  .card-md{
+    width: 33%;
+  }
+}
+/*宠物百科的样式*/
+.card-left {
+  width: 99.5%;
+  background-color: #e9e7e8;
+  border-left: 8px solid #28a745;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+/*详情页 胶囊导航*/
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+.pagination>.page-item>.page-link{
+  border-radius: 0.25rem;
+}
+/*产品详情页中 文字详情*/
+.details{
+  display: block;
+  width: 43%;
+  float: left;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  line-height: 1.8rem;
+  margin-right: 1rem;
+  font-size: small;
+}
+/*详情中的 提醒样式*/
+.tips{
+  background: rgba(243,148,158,0.6);
+}
+@media (max-width: 767.9px){
+  .d-md-xs-none{
+    display: none !important;
+  }
+}
+/*产品详情中 店铺信息的文字样式*/
+.shop{
+  display: block;
+  float: left;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: small;
+}
+/*灰色背景*/
+.bg-default{
+  background-color: #eeeeee !important;
+}
+/*用户注册页面中*/
+.reg{
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  margin-top: 40px;
+  font-weight: 400;
+}
+@media screen and (max-width: 749px){
+  .reg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.reg-content{
+  background: rgba(255,255,255,0.8);
+  margin: 20px;
+  padding: 30px 40px;
+}
+.reg-tab{
+  width: 50%;
+  display: block;
+  margin-left: 25%;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fd8103;
+  text-align: center;
+  color: #fd8103;
+  font-size: 18px;
+  line-height: 50px;
+}
+.reg-msg{
+  width: 100%;
+  margin: 0 auto;
+}
+/*注册页面 表单中label*/
+.form-group > label {
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+  color: #333333;
+  font-size: 14px;
+  margin-right: 3px;
+}
+/*注册页面 表单中input*/
+.form-group > input {
+  width: 230px;
+  padding: 2px 5px;
+  margin-top: 2px;
+  border-radius: 2px;
+}
+/*注册页面 表单中span*/
+.form-group > span {
+  width: 270px;
+  color: #ffffff;
+  padding: 2px;
+  margin-top: 12px;
+  margin-left: 3px;
+  border-radius: 2px;
+  font-size: 10px;
+}
+/*红色背景*/
+.reg-default{
+  background-color: red;
+}
+/*黑色背景*/
+.reg-err{
+  background-color: #000000;
+}
+/*登录 注册 按钮的样式*/
+input[type="button"] {
+  background: -moz-linear-gradient(top,#28a745 0%, #208700 100%);
+  background: -webkit-linear-gradient(top,#28a745 0%, #208700 100%);
+  background: -o-linear-gradient(top,#28a745 0%, #208700 100%);
+  background: -ms-linear-gradient(top,#28a745 0%, #208700 100%);
+  background: linear-gradient(top,#28a745 0%, #208700 100%);
+  border: 1px solid #0a0;
+  width: 276px;
+  color: #fff;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+/*dog.html的导航栏样式*/
+.tabNav{
+  width: 100%;
+  height: 45px;
+  background: #28a745;
+}
+.tabNav .tabList{
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.tabNav .tabList > li {
+  list-style: none;
+  width: 96px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.tabNav .tabList > li:hover {
+  background: #208700;
+}
+.tabNav .tabList > li > a {
+  color: #ffffff;
+}
+/*dog.html 热门犬种*/
+.container .h3 h3{
+  font-weight: normal;
+  font-size: 20px;
+  padding-left: 28px;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 9px;
+  color: #222333;
+  background: url("../images/dog/imgs.png") no-repeat;
+}
+/*黄色小星星*/
+.container .h3 #hotdogs{
+  background-position: -1px -26px;
+}
+/*犬种检索 灰蓝背景色*/
+.container .conRight {
+  /*width: 100%;*/
+  background: #e9f1f8;
+  margin-top: 5px;
+  padding-top: 10px;
+  border-radius: 3px;
+}
+.container .conRight .dogSearch{
+  background: #ffffff;
+  overflow: hidden;
+  padding: 0.6rem;
+  border-radius: 2px;
+  border: 4px solid rgba(255, 188, 7, 0.35);
+}
+.container .conRight .dogSearch h4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #000000;
+}
+.container .conRight .dogSearch .searchType{
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+.container .conRight .dogSearch .searchType dt {
+  clear: both;
+  color: #3289d9;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: .45rem;
+}
+.container .conRight .dogSearch .searchType dd{
+  line-height: 20px;
+  font-size: 14px;
+}
+.container .searchType .searchContent{
+  margin-right: 1.05rem;
+  display: block;
+  float: left;
+  align-items: baseline;
+}
+.container .conRight .dogSearch .searchType dd input{
+  margin-right: 0.17rem;
+}
+.searTop{
+  font-size: 16px;
+  width: 100%;
+  padding-left: 15px;
+  height: 38px;
+  line-height: 38px;
+  color: #808080;
+  background: linear-gradient(top,#f0f0f0 0%,#e0e0e0 100%);
+  background: -moz-linear-gradient(top,#f0f0f0 0%,#e0e0e0 100%);
+  background: -webkit-linear-gradient(top,#f0f0f0 0%,#e0e0e0 100%);
+  background: -ms-linear-gradient(top,#f0f0f0 0%,#e0e0e0 100%);
+  background: -o-linear-gradient(top,#f0f0f0 0%,#e0e0e0 100%);
+  box-shadow: 3px 3px 6px #ccc;
+}
+.advance{
+  padding: 6px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #808080;
 }
