@@ -13,25 +13,59 @@
 </head>
 <body>
 -->
-<header class="container p-0">
-  <div class="navbar navbar-expand-lg bg-success navbar-dark">
-    <a href="#" class="navbar-brand w-25 mr-0 pr-0"><img class="w-100 mr-0 pr-0" src="../images/logo.png"/></a>
+<header id="header" class="container p-0">
+  <div class="d-flex justify-content-between flex-wrap mt-2 mb-2">
+    <a href=""><img src="../images/logo156.png"/></a>
+    <div class="form-group d-flex mt-3">
+      <input class="form-control" type="text" autofocus placeholder="请输入搜索内容"/>
+      <button class="btn-success p-1">搜索</button>
+    </div>
+    <ul class="d-flex mt-3 pt-1">
+      <li><a class="small ml-1 mr-1" href="">收藏</a><b>|</b></li>
+      <li><a class="small ml-1 mr-1" href="">我的购物车</a><b>|</b></li>
+      <li><a class="small ml-1 mr-1" href="register.html">注册</a><b>|</b></li>
+      <li><a class="small ml-1 mr-1" href="login.html">登录</a></li>
+    </ul>
+  </div>
+  <div class="navbar navbar-expand-md bg-success navbar-dark">
+    <a href="index.html" class="navbar-brand wra w-25 mr-0 pr-0">
+      首页
+      <!--<img class="w-100 mr-0 pr-0" src="../images/logo.png"/>-->
+    </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#header_nav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div id="header_nav" class="collapse navbar-collapse">
       <ul class="nav navbar-nav flex-nowrap">
-        <li class="nav-item active"><a class="nav-link text-nowrap" href="#">首页</a></li>
+        <!--<li class="nav-item active"><a class="nav-link text-nowrap" href="index.html">首页</a></li>-->
         <!-- text-nowrap控制文本不折行 -->
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">宠物狗</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">宠物猫</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">奇趣小宠</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">宠物用品</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">宠物百科</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">宠物店铺</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">宠物集市</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">宠物秀场</a></li>
-        <li class="nav-item"><a class="nav-link text-nowrap" href="#">知识问答</a></li>
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="dog.html">宠物狗</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="cat.html">宠物猫</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="small.html">奇趣小宠</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="petneed.html">宠物用品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="petwiki.html">宠物百科</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="petshops.html">宠物店铺</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link text-nowrap" href="#">宠物集市</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="#">宠物秀场</a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link text-nowrap" href="#">知识问答</a>
+        </li>
       </ul>
     </div>
   </div>

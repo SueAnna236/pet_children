@@ -15,121 +15,156 @@
 <!--利用jQuery的load()方法把header.html加载进来-->
 <header class="header"></header>
 <div class="container">
+
   <!-- 商品信息展示 -->
-  <div>
-    <!-- 导航--面包屑导航 -->
-
-    <!-- 具体信息 -->
-    <div class="row border">
-      <!-- 图片展示 -->
-      <div class="col-4">
-        <!-- 大图显示-->
-
+  <!-- 导航--面包屑导航 -->
+  <ul class="breadcrumb small bg-transparent mt-2 mb-0 pl-0">
+    <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+    <li class="breadcrumb-item"><a href="index.html">狗狗推荐</a></li>
+    <li class="breadcrumb-item"><a href="index.html">推荐详情</a></li>
+  </ul>
+  <!-- 具体信息 -->
+  <div class="row border">
+    <!-- 图片展示 -->
+    <div class="col-md-5 col-sm-12 pl-0">
+      <!-- 大图显示-->
+      <div class="card w-100 m-2">
+        <img class="card-img-top w-100 p-1" src="../images/product/dog/details/golden-1.jpg"/>
         <!-- 小图列表-->
-
-        <!-- 放大镜图显示-->
+        <div class="card-body p-1">
+          <ul class="list-unstyled d-flex justify-content-start mb-0">
+            <li class="mr-2"><img class="w-100" src="../images/product/dog/details/golden-1.jpg"/></li>
+            <li class="mr-2"><img class="w-100" src="../images/product/dog/details/golden-1.jpg"/></li>
+            <li class="mr-2"><img class="w-100" src="../images/product/dog/details/golden-1.jpg"/></li>
+            <li class="mr-2"><img class="w-100" src="../images/product/dog/details/golden-1.jpg"/></li>
+          </ul>
+        </div>
       </div>
-
-      <!-- 详情 -->
-      <div class="col-5">
+      <!-- 放大镜图显示-->
+    </div>
+    <!-- 详情 -->
+    <div class="col-md-5 col-sm-12 p-0">
+      <div class="card m-2 border-0">
         <!-- 标题：title-->
-        <h3>拉布拉多健康纯种幼犬 拉布拉多包养活签协议</h3>
-
+        <h5 class="card-header text-dark font-weight-bold">拉布拉多健康纯种幼犬 拉布拉多包养活签协议</h5>
         <!-- 详情：价格、品种、性别、年龄、驱虫情况、疫苗情况、血统证书、所在地区、运费-->
-        <div>
-          <p>价格：¥4800</p>
-          <p>品 种：拉布拉多</p>
-          <p>宠物性别：公</p>
-          <p>宠物年龄：3个月</p>
-          <p>驱虫情况： 已驱虫</p>
-          <p>疫苗情况： 一针</p>
-          <p>血统证书： 国内证</p>
-          <p>所在地区：北京-朝阳</p>
-          <p>运费：¥0(空运)</p>
-        </div>
-
-        <!-- 购买数量、友情提示 -->
-        <div>
-          <p>我要买：<button>-</button><input type="text"/>1<button>+</button></p>
-          <p>提醒:请选择在线交易,享受担保服务,谨防受骗联系我时，请说是在奇宠网商城看到的，谢谢!请与卖家签署奇宠网商城合同！（点击查看流程）</p>
+        <div class="card-body p-1">
+          <div class="alert font-weight-bold border-0 p-1 m-1" role="alert">
+            <span>价格：</span>
+            <h3 class="d-inline text-danger"><small>¥</small>4800</h3>
+          </div>
+          <div class="alert border-0 p-1 m-1" role="alert">
+            <ul class="d-flex justify-content-start mb-0 flex-wrap small">
+              <li class="details"><span>品 种：</span><span>拉布拉多</span></li>
+              <li  class="details"><span>宠物性别：</span><span>公</span></li>
+              <li  class="details"><span>宠物年龄：</span><span>3个月</span></li>
+              <li  class="details"><span>驱虫情况：</span><span>已驱虫</span></li>
+              <li  class="details"><span>疫苗情况：</span><span>一针</span></li>
+              <li  class="details"><span>血统证书：</span><span>国内证</span></li>
+              <li  class="details"><span>所在地区：</span><span>北京-朝阳</span></li>
+              <li  class="details"><span>运费：</span><span>¥0(空运)</span></li>
+            </ul>
+          </div>
+          <!-- 购买数量、友情提示 -->
+          <div class="alert border-0 p-1 m-1" role="alert">
+            <ul class="d-flex justify-content-start flex-wrap small p-0 m-0">
+              <li  class="d-flex mb-2">
+                <span class="float-left d-flex flex-nowrap text-nowrap mt-2">我要买：</span>
+                  <span class="float-left d-flex align-items-center">
+                    <button class="btn btn-default">-</button>
+                    <input class="text-center form-control w-25" type="text" value="1"/>
+                    <button class="btn btn-default">+</button>
+                  </span>
+              </li>
+              <li class="card tips p-1 m-0 mt-2"><p class="card-body p-0 m-0">提醒：请选择在线交易,享受担保服务,谨防受骗联系我时，请说是在奇宠网商城看到的，谢谢!请与卖家签署奇宠网商城合同！（点击查看流程）</p></li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <!-- 店铺信息 -->
-      <div class="col-3">
+    </div>
+    <!-- 店铺信息 -->
+    <div class="col-md-2 col-sm-12 p-0">
+      <div class="card">
         <!-- 头像及名称-->
-        <h3>星级宠屋</h3>
+        <h6 class="card-header text-white font-weight-bold text-center bg-success">星级宠屋</h6>
         <!-- 联系人： 电话： 地址：-->
-        <div>
-          <p>联系人：姚磊</p>
-          <p>电话： 15010092690</p>
-          <p>地址： 北京朝阳区</p>
-        </div>
-        <!-- 在线咨询-->
-        <!-- 是否实名认证-->
-        <p>个人实名已认证</p>
-        <!-- 进入店铺 button-->
-        <button>进入店铺</button>
-        <!-- 收藏店铺-->
-        <button>收藏店铺</button>
+        <ul class="card-body alert small p-1 m-0">
+          <li class="shop w-100"><img class="card-img-top d-md-block d-md-xs-none w-100" src="../images/avatar/dog1.jpg"/></li>
+          <li class="shop"><span>联系人：</span><span>姚磊</span></li>
+          <li class="shop"><span>电话：</span><span>15010092690</span></li>
+          <li class="shop"><span>地址：</span><span>北京朝阳区</span></li>
+        </ul>
+        <ul class="card-body alert small p-1 m-0">
+          <li class="shop"><span class="btn btn-default float-left p-0 m-0 pb-1 pr-1 mr-2"><a class="text-danger small" href="#"><img class="pr-1" src="../images/product/qq_index.png" alt="QQ"/>在线咨询</a></span></li>
+          <li class="shop"><span class="btn btn-default float-left p-0 m-0 pb-1 pr-1 mr-2"><a class="text-danger small" href="#"><img class="pr-1" src="../images/product/icon/authen.png"/>实名已认证</a></span></li>
+        </ul>
+        <ul class="card-body alert small p-1 m-0">
+          <li class="shop"><a class="btn btn-sm btn-default">进入店铺</a></li>
+          <li class="shop"><a class="btn btn-sm btn-default">收藏店铺</a></li>
+        </ul>
       </div>
-
     </div>
   </div>
-
-  <!-- 商品详情部分 -->
-  <div class="row">
-    <!-- 全部商品列表-->
-    <div class="col-2">
-      <ul>
-        <a href="#">全部商品</a>
-        <li>茶杯泰迪</li>
-        <li>玩具泰迪犬</li>
-        <li>金毛犬</li>
-        <li>博美犬</li>
-        <li>萨摩耶</li>
-        <li>比熊犬</li>
-        <li>吉娃娃</li>
-        <li>哈士奇</li>
-        <li>约克夏</li>
-        <li>阿拉斯加犬</li>
-        <li>拉布拉多</li>
-        <li>德国牧羊犬</li>
-        <li>秋田犬</li>
-        <li>英国斗牛犬</li>
-        <li>法国斗牛犬</li>
-        <li>柯基犬</li>
-        <li>雪纳瑞</li>
-        <li>边境牧羊犬</li>
-        <li>巴哥犬</li>
-        <li>小鹿犬</li>
-        <li>蝴蝶犬</li>
-        <li>中华冠毛犬</li>
-        <li>京巴犬</li>
-        <li>西高地白梗</li>
-        <li>泰迪犬</li>
+  <div class="row mt-2 mb-2 border">
+    <div class="col-md-2 col-sm-12 p-0">
+      <ul class="btn-group-vertical d-md-xs-none p-0 m-0">
+        <li class="btn btn-success ml-0"><a class="text-white font-weight-bold align-items-start" href="">全部商品</a></li>
+        <li class="btn btn-default ml-0"><a href="">茶杯泰迪</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">玩具泰迪犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">金毛犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">博美犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">萨摩耶</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">比熊犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">吉娃娃</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">哈士奇</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">约克夏</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">阿拉斯加犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">拉布拉多</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">德国牧羊犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">秋田犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">英国斗牛犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">法国斗牛犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">柯基犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">雪纳瑞</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">边境牧羊犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">巴哥犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">小鹿犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">蝴蝶犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">中华冠毛犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">京巴犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">西高地白梗</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
+        <li class="btn btn-default"><a href="">泰迪犬</a>&nbsp;&nbsp;<span class="badge badge-success badge-pill">10</span></li>
       </ul>
     </div>
+    <div class="col-md-10 col-sm-12 p-0">
+      <!-- 商品详情部分 -->
+      <ul class="bg-light nav nav-tabs rounded-top border w-100">
+        <li class="nav-item"><a class="nav-link active text-muted" data-toggle="tab" href="#introduction">商品介绍</a></li>
+        <li class="nav-item"><a class="nav-link text-muted" data-toggle="tab" href="#comment">买家评论</a></li>
+        <li class="nav-item"><a class="nav-link text-muted" data-toggle="tab" href="#Consultation">购买咨询</a></li>
+      </ul>
+      <div class="tab-content">
+        <!-- 商品介绍 -->
+        <div id="introduction" class="tab-pane active">
+          <p class="p-2">欢迎广大顾客上门选购。
+            血统纯正。健康保证，依靠生物基因遗传繁殖、训练技术和科学的管理,使我们有能力不断为国内外客户提供血统纯正，高水平的工作犬和家庭伴侣犬。
 
-    <!-- 有关商品-->
-    <div class="col-10">
-      <!-- 商品介绍 -->
-      <p>欢迎广大顾客上门选购。
-        血统纯正。健康保证，依靠生物基因遗传繁殖、训练技术和科学的管理,使我们有能力不断为国内外客户提供血统纯正，高水平的工作犬和家庭伴侣犬。
+            我们质量与售后保证: 1、狗狗售出《半年》以内有任何问题可换同等品质狗狗（每只狗狗的售后服务都可签协议书保证，有法律效果）2、在我狗场买狗可：------终身免费注射疫苗、狂犬-------------------------终身免费驱虫、-------------------------终身免费给狗看病、-------------------------终身免费训练各种动作、-------------------------终身免费美容（洗澡、剪毛、剪指甲）3、每年享有一个月免费寄养。4、每买一只狗狗,送一套宠物用品5、幼犬三个月以后，每年赠送免费体检一次6、随犬附赠一份饲养手册，给初次养犬的朋友做份指导，让您没有后顾之忧 7、我们会随狗宝宝赠送爱心卡内容包括:宝宝生日、疫苗注射情况、幼犬喂养注意事项。8、免费参加我们所组织的各种郊游及犬种互动活动9、如在我狗场买任何一只狗如三个月内发现不纯种可全额退款！！！！
 
-        我们质量与售后保证: 1、狗狗售出《半年》以内有任何问题可换同等品质狗狗（每只狗狗的售后服务都可签协议书保证，有法律效果）2、在我狗场买狗可：------终身免费注射疫苗、狂犬-------------------------终身免费驱虫、-------------------------终身免费给狗看病、-------------------------终身免费训练各种动作、-------------------------终身免费美容（洗澡、剪毛、剪指甲）3、每年享有一个月免费寄养。4、每买一只狗狗,送一套宠物用品5、幼犬三个月以后，每年赠送免费体检一次6、随犬附赠一份饲养手册，给初次养犬的朋友做份指导，让您没有后顾之忧 7、我们会随狗宝宝赠送爱心卡内容包括:宝宝生日、疫苗注射情况、幼犬喂养注意事项。8、免费参加我们所组织的各种郊游及犬种互动活动9、如在我狗场买任何一只狗如三个月内发现不纯种可全额退款！！！！
+            疫苗注射及驱虫情况第20天:开始对它体内外驱虫6周龄以上的幼犬须进行三次免疫接种 第一次 幼犬6周龄注射幼犬二联疫苗； 第二次 幼犬8-9周龄注射犬六联疫苗； 第三次 幼犬12 周龄注射犬六联疫苗； 以后每年建议都注射犬七联疫苗一次。
 
-        疫苗注射及驱虫情况第20天:开始对它体内外驱虫6周龄以上的幼犬须进行三次免疫接种 第一次 幼犬6周龄注射幼犬二联疫苗； 第二次 幼犬8-9周龄注射犬六联疫苗； 第三次 幼犬12 周龄注射犬六联疫苗； 以后每年建议都注射犬七联疫苗一次。
-
-        买家须知：刚买到家的小狗,前二十天，以适应环境为主，此时它个体抗体功能极低，其所带病体和新环境病体最容易感染狗狗一、到家7天内不能洗澡不能带出去玩。二、到家10天内，以粥状食物或干燥食物加水浸泡后食用为宜。其它一些食物常会引起消化不良、拉稀等所以切忌不要让狗狗食用。三、环境温度要求初购狗狗的居住环境,对其生存有决定作用，温度过高和过低，或温差变化过大，都会导致其身体不适，最易造成其感冒、拉肚，身体抵抗力降低，诱发其它疫病。控制温度主要是要注意调整其居住环境，冬季注意保暖，保持温度；夏季注意通风，保持清凉。四、不要在小狗吃食时打扰它，否则它以后在吃饭时会变得很紧张。五、幼犬怕冷，因此不管是冬天还是夏天都要注意做好幼犬的保暖工作，不要让幼犬长时间着地，这样易着凉，引起拉稀或感冒。六、不可过度玩耍，令其劳累过度。PS. 上门看狗狗请提前电话预约联系， 防止狗狗售完，您白跑一趟。</p>
-
-      <!-- 买家评论-->
-
-      <!-- 购买咨询-->
-
-      <!-- 商品推荐-->
+            买家须知：刚买到家的小狗,前二十天，以适应环境为主，此时它个体抗体功能极低，其所带病体和新环境病体最容易感染狗狗一、到家7天内不能洗澡不能带出去玩。二、到家10天内，以粥状食物或干燥食物加水浸泡后食用为宜。其它一些食物常会引起消化不良、拉稀等所以切忌不要让狗狗食用。三、环境温度要求初购狗狗的居住环境,对其生存有决定作用，温度过高和过低，或温差变化过大，都会导致其身体不适，最易造成其感冒、拉肚，身体抵抗力降低，诱发其它疫病。控制温度主要是要注意调整其居住环境，冬季注意保暖，保持温度；夏季注意通风，保持清凉。四、不要在小狗吃食时打扰它，否则它以后在吃饭时会变得很紧张。五、幼犬怕冷，因此不管是冬天还是夏天都要注意做好幼犬的保暖工作，不要让幼犬长时间着地，这样易着凉，引起拉稀或感冒。六、不可过度玩耍，令其劳累过度。PS. 上门看狗狗请提前电话预约联系， 防止狗狗售完，您白跑一趟。</p>
+        </div>
+        <!-- 买家评论-->
+        <div id="comment" class="tab-pane">
+          <p>暂无评论</p>
+        </div>
+        <!-- 购买咨询-->
+        <div id="Consultation" class="tab-pane">
+          <a href="">在线咨询</a>
+        </div>
+      </div>
     </div>
-
   </div>
 
 </div>
