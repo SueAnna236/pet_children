@@ -83,7 +83,7 @@ CREATE TABLE pet_product(
 	pid INT PRIMARY KEY AUTO_INCREMENT,
 	title VARCHAR(16),
 	img VARCHAR(128),
-	kid INT,/**1:：狗狗，2：猫咪，3：小宠**/
+	kid INT,/**1：狗狗，2：猫咪，3：小宠**/
 	price DECIMAL(10,2)
 );
 INSERT INTO pet_product VALUES

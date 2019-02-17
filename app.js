@@ -1,26 +1,55 @@
-//Ê¹ÓÃexpress¹¹½¨web·şÎñÆ÷
+//ä½¿ç”¨expressæ„å»ºwebæœåŠ¡å™¨
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-//ÒıÈëÂ·ÓÉÄ£¿é
-const routerData=require("./router/index.router");
-const routerLogin=require("./router/login");
-const routerRegister=require("./router/register");
-const routerProduct=require("./router/product");
+const pool = require("./pool");
+
+//å¼•å…¥è·¯ç”±æ¨¡å—
+//const routerData=require("./router/index.router");
+//const routerLogin=require("./router/login");
+//const routerRegister=require("./router/register");
+//const routerProduct=require("./router/product");
 
 var app = express();
-var server = http.createServer(app);
-server.listen(6066);
+app.listen(3000);
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static("public"));
 app.use(cors({
-  origin:"http://127.0.0.1:5500"
-}))
-//console.log("OK");
+  origin:[
+    "http://127.0.0.1:3000",
+    "http://localhost:3000",
+    "http://127.0.0.1:5500",
+    "http:localhost:5500",    
+    "http:localhost:3001"
+  ],
+  credentials: true
+}));
+const session = require("express-session");
+app.use(session({
+  secret: "128ä½éšæœºå­—ç¬¦ä¸²",
+  resave: true,
+  saveUniitialized: true,
+  cookie: {
+    maxAge: 1000*60*60*24
+  }
+}));
+console.log("OK");
 
-//Ê¹ÓÃÂ·ÓÉÆ÷À´¹ÜÀíÂ·ÓÉ
-app.use("/index_data",routerData);
-app.use("/login",routerLogin);
-app.use("/register",routerRegister);
-app.use("/product",routerProduct);
+// ä¸€ï¼šæŸ¥è¯¢æ‰€æœ‰å® ç‰©
+//http://localhost:3000/index
+app.get("/index",(req,res)=>{
+  var sql = " SELECT * FROM pet_product WHERE pid!=0 ORDER BY pid";
+  pool.query(sql,[],(err,result)=>{
+  if(err){
+    throw err;
+  }
+  res.send(result);
+  console.log(result[0]);
+  });
+});
+//ä½¿ç”¨è·¯ç”±å™¨æ¥ç®¡ç†è·¯ç”±
+//app.use("/index.data",routerData);
+//app.use("/login",routerLogin);
+//app.use("/register",routerRegister);
+//app.use("/product",routerProduct);
